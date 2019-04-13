@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ogdh-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px 0;
+  transition: padding-top 0.24s linear;
+  &.ogdh-container--wide {
+    padding-top: 0;
+  }
+}
+
+.ogdh-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background: #283593;
+  transition: all 0.24s linear;
+  &.ogdh-header--hide {
+    top: -40px;
+  }
+  .ogdh-header__menu {
+    margin: 8px 0;
+    padding: 0 8px;
+  }
+  .ogdh-header__icon {
+    cursor: pointer;
+  }
+}
+
+.ogdh-header-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  visibility: hidden;
+  transform: scale(0);
+  cursor: pointer;
+  transition: all .24s linear;
+  &.ogdh-header-btn--show {
+    visibility: visible;
+    transform: scale(1);
+  }
+}
