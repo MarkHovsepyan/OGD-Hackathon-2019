@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import map_data from '../../assets/map_data.json';
 import ymaps from 'ymaps';
 
 declare var ymaps: any;
@@ -11,8 +10,6 @@ declare var ymaps: any;
 })
 export class DashboardComponent implements OnInit {
   public hideMenu = false;
-  public csvUrl = 'assets/map_data.csv';
-
   public map: any;
 
   public data = [[40.213250, 44.507309],
@@ -174,8 +171,6 @@ export class DashboardComponent implements OnInit {
   }
 
   constructor() {
- //   console.log(map_data);
-   // console.log('fs');
    }
 
   ngOnInit() {
